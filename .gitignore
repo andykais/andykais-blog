@@ -1,2 +1,6 @@
+#ruby files
 Gemfile.lock
+
+#jekyll files
 _site/
+

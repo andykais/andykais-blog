@@ -1,1 +1,16 @@
-this will become my blog
+---
+layout: default
+title: Andrew Kaiser's Blog
+---
+
+<ul>
+	{% for post in site.posts %}
+	  <li>
+		<div>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+			<div>{{ post.excerpt }}</div>
+		</div>
+
+	  </li>
+	{% endfor %}
+</ul>
