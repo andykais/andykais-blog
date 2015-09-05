@@ -1,0 +1,10 @@
+---
+layout: post
+---
+
+{% include css/syntax.css %}
+{% include css/highlight_box.css %}
+
+.post {
+	
+}

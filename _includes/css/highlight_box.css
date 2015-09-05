@@ -1,0 +1,11 @@
+.highlight { background: #444444; }
+.highlight {
+	font: 300 Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: inset 0 1px 10px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.1),0 -1px 0 rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.1),0 -1px 0 rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.1),0 -1px 0 rgba(0,0,0,0.5);
+	text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
