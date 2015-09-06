@@ -3,7 +3,17 @@ layout: default
 title: Andrew Kaiser's Blog
 ---
 
-<ul>
+<script type="text/javascript">
+	{% include js/slider.js %}
+</script>
+
+<div id="header-photo"><img id="landscape" src="">
+	<div id="circle">
+		<div id="face"></div>
+	</div>
+</div>
+
+<ul id="post_list">
 	{% for post in site.posts %}
 	  <li>
 		<div>
