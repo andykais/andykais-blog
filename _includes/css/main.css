@@ -52,16 +52,20 @@ html, body {
 	width: 100%;
 	height: auto;
 
-	top: 0;
-	left: 0;
+	/*top: 0;*/
+	/*left: 0;*/
 
-	clip: rect(0px,60px,200px,0px);
+	/*clip: rect(0px,60px,200px,0px);*/
+}
+.wide-landscape {
+	/*display:block;*/
+    /*margin:auto;*/
 }
 /*used to center an image when window smaller than image*/
 /*@media screen and (max-width: 1920px) {
-  #header-photo img {
+  .wide-landscape {
     left: 50%;
-    margin-left: -960px;
+    margin-right: -960px;
   }
 }*/
 #circle {
@@ -83,6 +87,6 @@ html, body {
 	top: calc(50% - 80px);
 }
 #face img {
-	border-radius: 150px;
-
+	border-radius: 160px;
+	width: 160px;
 }
