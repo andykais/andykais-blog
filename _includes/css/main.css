@@ -14,9 +14,18 @@ html, body {
 	position:relative;
 	white-space: nowrap;
 
-	/*border-style: solid;*/
-	/*border-bottom: 1px solid black;*/
-	/*border-bottom: #ff0000 #0000ff;*/
+
+	background-repeat: no-repeat;
+    background-position : center;
+    background-size : cover;
+	/*background-image: url('/img/landscape/DSC_0183.JPG');*/
+	background-image: url('/img/landscape/DSC_0183.JPG'), url('/img/landscape/DSC_0199.JPG'), url('/img/landscape/DSC_1021_bright.jpg'), url('/img/landscape/DSC_1570.JPG'), url('/img/landscape/DSC_1576.JPG'), url('/img/landscape/DSC_1731.JPG'), url('/img/landscape/DSC_1841.JPG'), url('/img/landscape/DSC_2341.JPG'), url('/img/landscape/DSC_3613.JPG'), url('/img/landscape/DSC_3616.JPG');
+    -webkit-transition : background-image -150ms linear;
+    -moz-transition : background-image -150ms linear;
+    -ms-transition : background-image -150ms linear;
+    -o-transition : background-image -150ms linear;
+    transition : background-image -150ms linear;
+
 }
 .wide-landscape {
 
