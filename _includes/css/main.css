@@ -6,29 +6,61 @@ layout: post
 {% include css/highlight_box.css %}
 
 html, body {
-    margin: 0px;
-    padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
-#header-photo {
-	position:relative;
-	white-space: nowrap;
-
-
-	background-repeat: no-repeat;
-    background-position : center;
-    background-size : cover;
-	/*background-image: url('/img/landscape/DSC_0183.JPG');*/
-	background-image: url('/img/landscape/DSC_0183.JPG'), url('/img/landscape/DSC_0199.JPG'), url('/img/landscape/DSC_1021_bright.jpg'), url('/img/landscape/DSC_1570.JPG'), url('/img/landscape/DSC_1576.JPG'), url('/img/landscape/DSC_1731.JPG'), url('/img/landscape/DSC_1841.JPG'), url('/img/landscape/DSC_2341.JPG'), url('/img/landscape/DSC_3613.JPG'), url('/img/landscape/DSC_3616.JPG');
-    -webkit-transition : background-image -150ms linear;
-    -moz-transition : background-image -150ms linear;
-    -ms-transition : background-image -150ms linear;
-    -o-transition : background-image -150ms linear;
-    transition : background-image -150ms linear;
+#cover-photo {
+	width: 100%;
+	background: no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-transition : background-image -150ms linear;
+	-moz-transition : background-image -150ms linear;
+	-ms-transition : background-image -150ms linear;
+	-o-transition : background-image -150ms linear;
+	transition : background-image -150ms linear;
 
 }
-.wide-landscape {
+#page-wrapper {
 
+}
+.right-landscape {
+	/*max-width: 400px;*/
+
+	/*height: 500px;*/
+	/*background-color: grey;*/
+	/*display:inline-block;*/
+	/*width:70%;*/
+	/*display: table-footer-group;*/
+	/*float: left;*/
+}
+.left-post {
+	/*max-width: 400px;*/
+
+	/*position: absolute;*/
+	/*background-color: lightgrey;*/
+	/*padding-top:100px;*/
+	/*display:inline-block;*/
+	/*width:29%;*/
+	/*display: table-header-group;*/
+	/*float:left;*/
+}
+@media (min-width: 800px) and (orientation: landscape) {
+	.side-wrapper {
+		display: flex;
+	}
+	.right-landscape, .left-post {
+		flex: 1;
+	}
+	.right-landscape {
+		order: 2;
+	}
+	.left-post {
+		order: 1;
+	}
 }
 #circle {
 	position: relative;
