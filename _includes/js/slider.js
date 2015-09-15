@@ -1,14 +1,14 @@
 $(document).ready(function () {
 	var srcs = [
-		'/img/landscape/DSC_0183.JPG',
-		'/img/landscape/DSC_1021_bright.jpg',
-		'/img/landscape/DSC_1570.JPG',
-		'/img/landscape/DSC_1576.JPG',
-		'/img/landscape/DSC_1731.JPG',
-		'/img/landscape/DSC_1841.JPG',
-		'/img/landscape/DSC_3613.JPG',
-		'/img/landscape/DSC_0199.JPG',
-		'/img/landscape/DSC_2341.JPG',
+		'/img/landscape/DSC_0183_small.JPG',
+		'/img/landscape/DSC_1021_bright_small.jpg',
+		'/img/landscape/DSC_1570_small.JPG',
+		'/img/landscape/DSC_1576_small.JPG',
+		'/img/landscape/DSC_1731_small.JPG',
+		'/img/landscape/DSC_1841_small.JPG',
+		'/img/landscape/DSC_3613_small.JPG',
+		'/img/landscape/DSC_0199_small.JPG',
+		'/img/landscape/DSC_2341_small.JPG',
 	]
 	//snowshoes and backpack use uncropped version
 	loop(srcs)
