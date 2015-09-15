@@ -23,14 +23,44 @@ html, body {
 	-ms-transition : background-image -150ms linear;
 	-o-transition : background-image -150ms linear;
 	transition : background-image -150ms linear;
+	/*background-position: 0% 70%;*/
 
+	/*line-height: 700px;*/
+	text-align: center;
+	overflow: auto;
+}
+#vertical {
+	position: relative;
+	top:40%;
+}
+h2 {
+	    font-size: 2.6rem;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#header-name {
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+#header-description {
+	color: rgba(255,255,255,.8);
+	font-weight: normal;
+	width: 40%;
+	padding-left: 30%;
+	font-size: 1.2rem;
+}
+#header-description a {
+	color: #9EABB3;
+	text-shadow: 0 1px 2px #4A4A4A;
 }
 #circle {
 	position: relative;
 	width: 175px;
 	height: 175px;
 	left: calc(50% - 75px);
-	top: -87.5px;
 	background: #ffffff;
 	border-radius: 150px;
 	border: 1px solid #e0e0e0;
@@ -44,4 +74,37 @@ html, body {
 #face img {
 	border-radius: 160px;
 	width: 160px;
+}
+#post-list, #circle {
+	top: -87.5px;
+}
+#post-list {
+	position: relative;
+	list-style-type: none;
+	max-width: 700px;
+	margin:auto;
+}
+.one-post {
+	border-bottom: #EBF2F6 1px solid;
+}
+.post-title {
+	color: #4A4A4A;
+	transition: color .3s ease;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: initial;
+}
+.post-title:hover {
+	color: black;
+}
+.post-excerpt {
+	padding-bottom: 50px;
+}
+.post-date {
+	position: absolute;
+	right:0;
+	bottom: 0;
+	padding-bottom: 20px;
+	color: #9EABB3;
 }

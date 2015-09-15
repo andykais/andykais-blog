@@ -1,14 +1,22 @@
 ---
 layout: default
-title: Andrew Kaiser's Blog
+title: Andrew Kaiser - Home
 ---
 
 <script type="text/javascript">
 	{% include js/slider.js %}
 </script>
 
-<div id="cover-photo" class="right-landscape"></div>
-<div id="post-container" class="left-post">
+<div id="cover-photo">
+	<div id="vertical">
+		<h2 id="header-name">Andrew Kaiser</h2>
+		<h2 id="header-description">
+			I write code to make my life easier, take
+			<a href="http://flickr.com/photos/andykais">photos</a>
+			to see better, and <a href="http://andykais.tumblr.com/">draw</a> to keep the brain awake</h2>
+	</div>
+</div>
+<div id="post-container">
 	<div id="circle">
 		<div id="face"><img src="/img/me/734163_710085245668602_1982396748_n_small.jpg"></div>
 	</div>
@@ -16,9 +24,12 @@ title: Andrew Kaiser's Blog
 	<ul id="post-list">
 		{% for post in site.posts %}
 		  <li>
-			<div>
-				<a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
-				<div>{{ post.excerpt }}</div>
+			<div class="one-post">
+				<h2>
+					<a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+				</h2>
+				<div class="post-excerpt">{{ post.excerpt }}</div>
+				<div class="post-date"> {{ post.date | date: '%B %d, %Y' }} </div>
 			</div>
 
 		  </li>
