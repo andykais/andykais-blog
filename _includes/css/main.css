@@ -8,6 +8,7 @@ layout: post
 html, body {
 	margin: 0px;
 	padding: 0px;
+	font-family: "Helvetica Neue",Helvetica,sans-serif!important;
 }
 
 #cover-photo {
@@ -23,44 +24,6 @@ html, body {
 	-o-transition : background-image -150ms linear;
 	transition : background-image -150ms linear;
 
-}
-#page-wrapper {
-
-}
-.right-landscape {
-	/*max-width: 400px;*/
-
-	/*height: 500px;*/
-	/*background-color: grey;*/
-	/*display:inline-block;*/
-	/*width:70%;*/
-	/*display: table-footer-group;*/
-	/*float: left;*/
-}
-.left-post {
-	/*max-width: 400px;*/
-
-	/*position: absolute;*/
-	/*background-color: lightgrey;*/
-	/*padding-top:100px;*/
-	/*display:inline-block;*/
-	/*width:29%;*/
-	/*display: table-header-group;*/
-	/*float:left;*/
-}
-@media (min-width: 800px) and (orientation: landscape) {
-	.side-wrapper {
-		display: flex;
-	}
-	.right-landscape, .left-post {
-		flex: 1;
-	}
-	.right-landscape {
-		order: 2;
-	}
-	.left-post {
-		order: 1;
-	}
 }
 #circle {
 	position: relative;
