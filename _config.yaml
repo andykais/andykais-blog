@@ -11,3 +11,5 @@ defaults:
     values:
       layout: "default"
       # highlighter: pygments
+
+exclude: [Guardfile, Gemfile, Gemfile.lock, .idea]

@@ -8,9 +8,13 @@ layout: post
 html, body {
 	margin: 0px;
 	padding: 0px;
-	font-family: "Helvetica Neue",Helvetica,sans-serif!important;
+	font-family: "Merriweather", serif;
+    font-size: 1em;
 }
-
+#post-container {
+	position:relative;
+	top: -87.5px;
+}
 #cover-photo {
 	width: 100%;
 	background: no-repeat center center;
@@ -29,12 +33,14 @@ html, body {
 	text-align: center;
 	overflow: auto;
 }
-#vertical {
-	position: relative;
-	top:40%;
+#intro-container {
+	/*position: absolute;*/
+	/*vertical-align: center;*/
+	/*margin:auto;*/
+	/*top:35%;*/
 }
 h2 {
-	    font-size: 2.6rem;
+    font-size: 2.6rem;
 }
 a {
 	text-decoration: none;
@@ -42,25 +48,73 @@ a {
 }
 
 #header-name {
-	color: #ffffff;
-	margin-bottom: 15px;
+	position: relative;
+	margin: auto;
+	top: 310px;
+	font-family: Stalemate, serif;
+    font-weight: bold;
+	font-size: 7.9rem;
+	/*font-size: 1.5rem;*/
+	/*color: #333333;*/
+	/*margin-bottom: 0;*/
+	text-align: center;
+	color: white;
+}
+.description {
+	padding-top: 10px;
+	font-weight: normal;
+	width: 90%;
+	padding-left: 5%;
+	font-size: 1rem;
+	text-align: center;
+	color: rgba(0,0,0,0.6);
+	padding-bottom: 10px;
 }
 #header-description {
-	color: rgba(255,255,255,.8);
-	font-weight: normal;
-	width: 40%;
-	padding-left: 30%;
-	font-size: 1.2rem;
+    padding-top: 20px;
 }
-#header-description a {
-	color: #9EABB3;
-	text-shadow: 0 1px 2px #4A4A4A;
+#lower-description {
+    font-size: .9rem;
 }
+.custom-links {
+    color: #4A4A4A;
+}
+.custom-links:hover {
+    color: #828d94;
+
+}
+.custom-links:visited{
+    text-decoration: none;
+
+}
+.line {
+    width: 20%;
+    margin-left:40%;
+    border-top:#EBF2F6 1px solid;
+}
+#icon-container {
+    position: relative;
+    text-align:center;
+}
+#icongrid {
+    position: relative;
+    display:inline-block;
+    /*max-width: 100px;*/
+    /*border:solid 1px;*/
+    text-align:center;
+    font-size: 1.9rem;
+}
+.follow {
+    padding-left: 5px;
+    display:inline;
+}
+
 #circle {
 	position: relative;
 	width: 175px;
 	height: 175px;
-	left: calc(50% - 75px);
+	left: calc(50% - 87.5px);
+    /*left: 50%;*/
 	background: #ffffff;
 	border-radius: 150px;
 	border: 1px solid #e0e0e0;
@@ -75,19 +129,18 @@ a {
 	border-radius: 160px;
 	width: 160px;
 }
-#post-list, #circle {
-	top: -87.5px;
-}
 #post-list {
 	position: relative;
 	list-style-type: none;
+	width: 90%;
 	max-width: 700px;
-	margin:auto;
+	margin: 4rem auto;
 }
 .one-post {
 	border-bottom: #EBF2F6 1px solid;
 }
 .post-title {
+	font-family: "Helvetica Neue",Helvetica,sans-serif!important;
 	color: #4A4A4A;
 	transition: color .3s ease;
     transition-property: color;
@@ -99,6 +152,7 @@ a {
 	color: black;
 }
 .post-excerpt {
+	color: rgba(0,0,0,0.6);
 	padding-bottom: 50px;
 }
 .post-date {

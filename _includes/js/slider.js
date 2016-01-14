@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 function loop(srcs) {
 	// loop through array values
-	var stream = Bacon.repeatedly(5000, srcs);
+	var stream = Bacon.repeatedly(15000, srcs);
 	// stream = Bacon.once(1).combine(stream)
 	// stream.subscribe(Bacon.once(1))
 	// var stream = Bacon.interval(10000)
