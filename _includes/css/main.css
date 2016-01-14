@@ -2,18 +2,17 @@
 layout: post
 ---
 
+/*need to make the font sizes agree with mobile*/
+
 {% include css/syntax.css %}
 {% include css/highlight_box.css %}
+{% include css/post.css %}
 
 html, body {
 	margin: 0px;
 	padding: 0px;
 	font-family: "Merriweather", serif;
     font-size: 1em;
-}
-#post-container {
-	position:relative;
-	top: -87.5px;
 }
 #cover-photo {
 	width: 100%;
@@ -92,6 +91,14 @@ a {
     margin-left:40%;
     border-top:#EBF2F6 1px solid;
 }
+/*@media only screen and (min-width:600px) {*/
+@media only screen and (max-width:481px) {
+    .line {
+        margin:0;
+        width: 100%;
+        border-top:#EBF2F6 2px solid;
+    }
+}
 #icon-container {
     position: relative;
     text-align:center;
@@ -128,37 +135,4 @@ a {
 #face img {
 	border-radius: 160px;
 	width: 160px;
-}
-#post-list {
-	position: relative;
-	list-style-type: none;
-	width: 90%;
-	max-width: 700px;
-	margin: 4rem auto;
-}
-.one-post {
-	border-bottom: #EBF2F6 1px solid;
-}
-.post-title {
-	font-family: "Helvetica Neue",Helvetica,sans-serif!important;
-	color: #4A4A4A;
-	transition: color .3s ease;
-    transition-property: color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: initial;
-}
-.post-title:hover {
-	color: black;
-}
-.post-excerpt {
-	color: rgba(0,0,0,0.6);
-	padding-bottom: 50px;
-}
-.post-date {
-	position: absolute;
-	right:0;
-	bottom: 0;
-	padding-bottom: 20px;
-	color: #9EABB3;
 }
