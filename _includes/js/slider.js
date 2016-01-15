@@ -38,6 +38,7 @@ function loop(srcs) {
 function display_img(loading) {
 	var header = document.getElementById('cover-photo');
 	var postContainer = document.getElementById('post-container')
+    var circle = document.getElementById('circle');
 	var winHeight = window.innerHeight;
 	var winWidth = window.innerWidth;
 	//ratio where the view becomes 'tall' vs 'wide' (it is the ratio of a 5:7 cropped photo)
@@ -53,4 +54,6 @@ function display_img(loading) {
 	var img = bg.css("background-image", insertBackground);
 
 	header.style.height = winHeight*0.7 + 'px';
+    //circle.style.top = winHeight*0.7 + 'px';
+
 }

@@ -49,7 +49,8 @@ a {
 #header-name {
 	position: relative;
 	margin: auto;
-	top: 310px;
+	/*top: 310px;*/
+    top: 40%;
 	font-family: Stalemate, serif;
     font-weight: bold;
 	font-size: 7.9rem;
@@ -58,6 +59,10 @@ a {
 	/*margin-bottom: 0;*/
 	text-align: center;
 	color: white;
+}
+#post-container {
+    position: relative;
+    top: -87.5px;
 }
 .description {
 	padding-top: 10px;
@@ -117,6 +122,7 @@ a {
 }
 
 #circle {
+    /*top: -87.5px;*/
 	position: relative;
 	width: 175px;
 	height: 175px;
