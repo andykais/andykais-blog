@@ -1,6 +1,8 @@
 ##setup
 title: Kaiser
 
+excerpt_separator: <!--more-->
+
 defaults:
   -
     scope:
